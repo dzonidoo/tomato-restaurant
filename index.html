@@ -4,62 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/stylesccs.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+        }
+        
+        body.red-bg {
+            background: red;
+        }
+        
+        a {
+            font-size: 40px;
+            display: block;
+        }
+        
+        a {
+            background-color: transparent;
+            border: none;
+            font-size: 80px;
+            color: red;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function changeBackground() {
+            var body = document.getElementsByTagName('body')[0];
+            var color = getRandomColor();
+
+            body.setAttribute('style', 'background-color:' + color);
+        }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+
+        }
+        setInterval(function() {
+            changeBackground();
+        }, 1000);
+    </script>
 </head>
 
 <body>
-    <section>
-        <div class="container-fluid d-flex header align-items-center">
-            <div class="flex-grow-0 line">
-                <a class="material-icons">home</a>
-            </div>
-            <div class="flex-grow-1">
-                <a id="logo">AUSTRALIA</a>
-            </div>
-            <div class="flex-grow-0 line">
-                <ul>SEARCH & EXPLORE</ul>
-            </div>
-            <div class="flex-grow-0 line">
-                <a id="block" href="secondpage.html">FREE AUSTRALIA MAGAZINE</a>
-            </div>
-            <div class="flex-grow-0">
-                <a class="material-icons">mail</a>
-            </div>
-        </div>
-    </section>
-    <section class="main">
-        <div>
-            <h1>Pajo Pajo imam strasnu ideju!</h1>
-        </div>
-    </section>
-    <section class="main2">
-        <div class="container">
-            <div class="tab">
-                <ul class="d-flex">
-                    <li>Home</li>
-                    <li>Australia Magazine</li>
-                    <li>Travel INspiration</li>
-                    <li>Best places to se Austrealia's wildlife</li>
-                </ul>
-                <div>
-                    <h3>The island continent is blessed with a wealth of critters and creatures that can’t be found anywhere else.</h3>
-                </div>
-                <div class="text">
-                    <p>The best thing about Australia’s wildlife is that it’s seriously unique – and it’s everywhere. You may not see kangaroos hopping down city streets (actually they do on the odd occasion) but you don’t have to step too far into the wild
-                        to see some of these totally individual creatures. Due to its relative isolation, much of Australia’s wildlife is endemic, and while most of the world has only placental mammals, it also has marsupials, mammals that nurture their
-                        young in a pouch. It’s also got some of the world’s weirdest wildlife, like monotremes: the egg-laying, ant-eating echidna and the platypus – a venomous, egg-laying, duck-billed amphibious mammal – which is acknowledged as one
-                        of the strangest creatures in the animal kingdom. Many of Australia’s wildlife icons are found throughout the country, while others are more elusive. Here’s a guide to the best places to see some of its most popular and iconic
-                        wildlife.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <a onclick="changeBackground(), this.innerHTML = 'VOLIM TE OD DAVDE DO NOVOG HORIZONOTA I NAZAD'">KLIKNI ME</a>
 </body>
 
 </html>
