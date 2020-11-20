@@ -1,0 +1,84 @@
+ul {
+  margin: 0 !important;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header {
+  background-color: black;
+}
+
+.header div {
+  position: relative;
+  padding: 0 10px;
+}
+
+.header a {
+  color: white !important;
+  display: block;
+  padding: 10px 20px;
+}
+
+.header ul {
+  color: white;
+  padding: 10px 20px;
+}
+
+#logo {
+  font-size: 35px !important;
+  font-family: Tahoma, sans-serif;
+}
+
+#block {
+  border: 1px solid white;
+  color: black !important;
+  background-color: white;
+}
+
+#block:hover {
+  background-color: yellow;
+  text-decoration: underline;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.line:after {
+  content: ' ';
+  width: 1px;
+  height: 40px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main {
+  background-image: url("wall.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 200px 0;
+  color: white;
+  font-size: 60px;
+}
+/*# sourceMappingURL=stylesccs.css.map */

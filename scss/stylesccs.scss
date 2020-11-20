@@ -1,0 +1,74 @@
+@import 'varijable.scss';
+
+ul {
+    margin: 0 !important;
+    padding: 0;
+}
+
+.header {
+    background-color: $primarycolor;
+
+    div {
+        position: relative;
+        padding: 0 10px;
+    }
+
+    a {
+        color: white !important;
+        display: block;
+        padding: $pad;
+    }
+
+    ul {
+        color: white;
+        padding: $pad;
+    }
+}
+
+#logo {
+    font-size: 35px !important;
+    font-family: Tahoma, sans-serif;
+}
+
+#block {
+    border: 1px solid white;
+    color: black !important;
+    background-color: white;
+}
+#block:hover {
+    background-color: $secondaricolor;
+    text-decoration: underline;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+.line:after {
+    content: ' ';
+    width: 1px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+// main
+
+.main {
+    background-image: url('wall.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 200px 0;
+        color: white;
+        font-size: 60px;
+    }
+}
